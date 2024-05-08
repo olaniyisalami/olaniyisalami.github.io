@@ -1,0 +1,128 @@
+body{
+    background-color: #FFDAB9;
+}
+p{
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size:xx-large;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.clementine1 {
+    position: fixed;
+    top: 12.5%;
+    left: 12.5%;
+    transform: translate(-1, -1);
+    width: 20%;
+    animation: animateR 2s linear infinite; 
+
+}
+
+.cake {
+    position: fixed;
+    top: 5.5%;
+    left: 39.5%;
+    transform: translate(-1, -1);
+    width: 20%;
+
+}
+
+.clementine2 {
+    position: fixed;
+    top: 12.5%;
+    left: 87.5%;
+    transform: translate(-87.5%, -87.5%);
+    width: 20%;
+    animation: animateL 2s linear infinite; 
+
+}
+.moneybag {
+    position: fixed;
+    top: 60.5%;
+    left: 87.5%;
+    transform: translate(-87.5%, -87.5%);
+    width: 20%;
+    animation: movea 7s linear infinite; 
+
+}
+.button {
+  position: fixed;
+  top: 20.5%;
+  left: 45.5%;
+  transform: translate(-1, -1);
+  width: 400%;
+  opacity: 0;
+
+}
+@keyframes movea {
+    0% {
+      transform: translate(0,0);
+    }
+    50% {
+      transform: translate(-500%,0);
+    }
+    51%{ 
+        -webkit-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        transform: translate(-500%, 0)
+        scaleX(-1);
+    }
+
+    100%{
+      transform: translate(0, 0);
+    }
+  }
+
+@keyframes animateL { 
+    0% { 
+        transform: translate(-50%, -50%)  
+          perspective(200px)  
+          rotateX(0deg)  
+          rotateY(0deg); 
+    } 
+    50% { 
+        transform: translate(-50%, -50%) 
+          perspective(200px)  
+          rotateX(360deg)  
+          rotateY(0deg); 
+    } 
+    100% { 
+        transform: translate(-50%, -50%) 
+          perspective(200px)  
+          rotateX(360deg) 
+          rotateY(-360deg); 
+    } 
+}
+@keyframes animateR { 
+    0% { 
+        transform: translate(-50%, -50%)  
+          perspective(200px)  
+          rotateX(0deg)  
+          rotateY(0deg); 
+    } 
+    50% { 
+        transform: translate(-50%, -50%) 
+          perspective(200px)  
+          rotateX(360deg)  
+          rotateY(0deg); 
+    } 
+    100% { 
+        transform: translate(-50%, -50%) 
+          perspective(200px)  
+          rotateX(360deg) 
+          rotateY(360deg); 
+    } 
+}
